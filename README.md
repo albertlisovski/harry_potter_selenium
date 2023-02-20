@@ -11,10 +11,10 @@ Used technologies:
 - install Python 3.8 or above
 - install PIP
 > pip install webdriver-manager
-> pip install selenium
-> pip install allure-pytest
-> pip install pytest-html
-> pip install allure-python-commons
+pip install selenium
+pip install allure-pytest
+pip install pytest-html
+pip install allure-python-commons
 ## Run autotests
 > pytest -v --alluredir=./reports
 ## Generate reports
