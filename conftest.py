@@ -1,11 +1,10 @@
 import pytest
 from selenium import webdriver
 
-@pytest.fixture(scope="class")
-def browser(request):
+@pytest.fixture(scope="session")
+def browser():
     driver = webdriver.Remote(options=webdriver.ChromeOptions())
-    request.cls.driver = driver
-    yield
+    yield driver
     # Stop test
     driver.quit()
   
